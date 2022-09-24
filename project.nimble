@@ -37,7 +37,7 @@ task test, "Runs tests":
     nimFlags: string = &"--verbosity:{verbosity} -r"
     nimbleFlags: string = ""
 
-  for path in walkDirRec("nim-tests"):
+  for path in walkDirRec("tests", checkDir = true):
     let ext: string = splitFile(path).ext
     if ext == ".nim":
       exec &"nimble {nimbleFlags} c {nimFlags} {escape(path)}"
