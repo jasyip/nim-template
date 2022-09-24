@@ -1,0 +1,16 @@
+on: [push, pull_request]
+
+name: Nim testing
+
+jobs:
+  nim-lint:
+    name: Lint Nim code
+
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: reviewdog/action-nimlint@v1.7.0
+        with:
+          github_token: ${{ secrets.github_token }}
+          src: 'src/**/*.nim'
