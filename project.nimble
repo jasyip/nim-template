@@ -2,8 +2,8 @@
 
 version         = "0.1.0"
 author          = "Jason Yip"
-description     = "a"
-license         = "a"
+description     = "" # Fill this value to resolve error of mandatory value
+license         = "" # Fill this value to resolve error of mandatory value
 srcDir          = "src"
 
 # if just a binary package, uncomment and specifiy project name:
