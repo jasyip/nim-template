@@ -1,7 +1,4 @@
-import std/unittest
-
+discard """
+"""
 import project
-
-
-test "project":
-  check true
+assert 1 + 1 == 2
