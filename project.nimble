@@ -3,7 +3,7 @@
 version         = "0.1.0"
 author          = "Jason Yip"
 description     = "a"
-license         = ""
+license         = "a"
 srcDir          = "src"
 bin             = @[""]
 binDir          = "bin"
