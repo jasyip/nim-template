@@ -5,8 +5,21 @@ author          = "Jason Yip"
 description     = "a"
 license         = "a"
 srcDir          = "src"
-bin             = @[""]
+
+# if just a binary package, uncomment and specifiy project name:
+#[
+bin             = @["project"]
 binDir          = "bin"
+
+#[
+namedBin        =  {"sourceName" : "binaryName"}.toTable()
+]#
+
+# if a hybrid package, uncomment:
+#[
+installExt      = @["nim"]
+]#
+]#
 
 
 # Dependencies
